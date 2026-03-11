@@ -5,6 +5,9 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### Generation 8
+**Mutation:** additive | **Fitness:** 76.46 (+1.58) | Added duplicated shape elements
+
 ### Generation 7
 **Mutation:** numeric_drift | **Fitness:** 78.06 (+9.13) | Adjusted numeric parameters
 
