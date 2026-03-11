@@ -1,6 +1,6 @@
 # evolveSVG
 
-A self-evolving repos. The code in this repo mutates itself on a schedule,
+A self-evolving repo. The code in this repo mutates itself on a schedule,
 generating new SVG artwork through genetic programming. No human writes code after
 the initial commit. The git history is a fossil record of artificial evolution.
 
