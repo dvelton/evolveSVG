@@ -5,6 +5,9 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### Generation 3
+**Mutation:** color_shift | **Fitness:** 63.44 (+3.73) | Shifted color palette
+
 ### Generation 2
 **Mutation:** color_shift | **Fitness:** 61.23 (+3.05) | Shifted color palette
 

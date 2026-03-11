@@ -4,6 +4,10 @@
     "fitness": 83.1836
   },
   {
+    "generation": 3,
+    "fitness": 63.4403
+  },
+  {
     "generation": 2,
     "fitness": 61.2346
   }
