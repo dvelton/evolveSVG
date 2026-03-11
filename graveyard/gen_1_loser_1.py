@@ -17,7 +17,7 @@ def generate_svg():
     num_lines = 18
     line_length = 210.0
     stroke_width = 2.0
-    bg_color = "#0a0a2e"
+    bg_color = "#121531"
 
     elements = []
     elements.append(f'<svg xmlns="http://www.w3.org/2000/svg" '
@@ -65,7 +65,7 @@ def generate_svg():
             dy = cy + dot_r * math.sin(angle)
             elements.append(
                 f'<circle cx="{dx:.1f}" cy="{dy:.1f}" r="3.0" '
-                f'fill="#fffffe" fill-opacity="0.6"/>'
+                f'fill="#ffffff" fill-opacity="0.6"/>'
             )
 
     # Central highlight

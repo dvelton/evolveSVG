@@ -65,7 +65,7 @@ def generate_svg():
             dy = cy + dot_r * math.sin(angle)
             elements.append(
                 f'<circle cx="{dx:.1f}" cy="{dy:.1f}" r="3.0" '
-                f'fill="#fffffe" fill-opacity="0.6"/>'
+                f'fill="#eaf4f4" fill-opacity="0.6"/>'
             )
 
     # Central highlight

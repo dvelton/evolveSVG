@@ -5,4 +5,7 @@ what mutation was applied, and how fitness changed.
 
 ---
 
-*No generations yet. The first evolution run will populate this file.*
+### Generation 1
+**Mutation:** color_shift | **Fitness:** 83.18 (+0.00) | Shifted color palette
+
+![gen 1](output/snapshots/gen_1.svg)
