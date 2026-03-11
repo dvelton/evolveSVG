@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="60"><text x="10" y="35" fill="#888" font-size="12">Fitness history will appear after generation 1</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="60">
+<rect width="400" height="60" fill="#0d1117" rx="4"/>
+<polyline points="5.0,5.0 395.0,55.0" fill="none" stroke="#58a6ff" stroke-width="1.5"/>
+<circle cx="395.0" cy="55.0" r="2.5" fill="#58a6ff"/>
+</svg>

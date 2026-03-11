@@ -2,5 +2,9 @@
   {
     "generation": 1,
     "fitness": 83.1836
+  },
+  {
+    "generation": 2,
+    "fitness": 61.2346
   }
 ]
