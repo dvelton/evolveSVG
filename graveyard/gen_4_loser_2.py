@@ -20,13 +20,6 @@ def generate_svg():
     elements = []
     elements.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">')
     elements.append(f'<rect width="{width}" height="{height}" fill="{bg_color}"/>')
-    for i in range(0, num_lines, 3):
-        angle = 2.0 * math.pi * i / num_lines
-        for j in range(3, num_circles, 3):
-            dot_r = max_radius * j / num_circles
-            dx = cx + dot_r * math.cos(angle)
-            dy = cy + dot_r * math.sin(angle)
-            elements.append(f'<circle cx="{dx:.1f}" cy="{dy:.1f}" r="3.0" fill="#c8ffff" fill-opacity="0.6"/>')
     for i in range(num_circles, 0, -1):
         radius = max_radius * i / num_circles
         t = i / num_circles
@@ -47,6 +40,13 @@ def generate_svg():
         color = f'#{r:02x}{g:02x}{b:02x}'
         opacity = 0.3 + 0.4 * (i / num_lines)
         elements.append(f'<line x1="{cx}" y1="{cy}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{color}" stroke-width="{stroke_width}" opacity="{opacity:.2f}"/>')
+    for i in range(0, num_lines, 3):
+        angle = 2.0 * math.pi * i / num_lines
+        for j in range(3, num_circles, 3):
+            dot_r = max_radius * j / num_circles
+            dx = cx + dot_r * math.cos(angle)
+            dy = cy + dot_r * math.sin(angle)
+            elements.append(f'<circle cx="{dx:.1f}" cy="{dy:.1f}" r="3.0" fill="#c8ffff" fill-opacity="0.6"/>')
     elements.append(f'<circle cx="{cx}" cy="{cy}" r="8.0" fill="#ffe9de" fill-opacity="0.9"/>')
     elements.append('</svg>')
     return '\n'.join(elements)
