@@ -5,6 +5,9 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### Generation 17
+**Mutation:** structural_swap | **Fitness:** 86.36 (+9.96) | Swapped shape drawing blocks
+
 ### Generation 16
 **Mutation:** color_shift | **Fitness:** 80.93 (+2.88) | Shifted color palette
 
