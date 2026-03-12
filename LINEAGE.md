@@ -5,6 +5,9 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### Generation 16
+**Mutation:** color_shift | **Fitness:** 80.93 (+2.88) | Shifted color palette
+
 ### Generation 15
 **Mutation:** additive | **Fitness:** 82.43 (+2.96) | Added duplicated shape elements
 
