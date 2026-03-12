@@ -7,11 +7,11 @@ intentional mutation targets.
 import math
 
 def generate_svg():
-    width = 500
-    height = 500
+    width = 560
+    height = 533
     cx = 250.0
     cy = 250.0
-    num_circles = 12
+    num_circles = 10
     max_radius = 200.0
     num_lines = 18
     line_length = 210.0
@@ -23,6 +23,13 @@ def generate_svg():
     for i in range(0, num_lines, 3):
         angle = 2.0 * math.pi * i / num_lines
         for j in range(3, num_circles, 3):
+            dot_r = max_radius * j / num_circles
+            dx = cx + dot_r * math.cos(angle)
+            dy = cy + dot_r * math.sin(angle)
+            elements.append(f'<circle cx="{dx:.1f}" cy="{dy:.1f}" r="3.0" fill="#c8ffff" fill-opacity="0.6"/>')
+    for i in range(0, num_lines, 4):
+        angle = 1.56 * math.pi * i / num_lines
+        for j in range(5, num_circles, 2):
             dot_r = max_radius * j / num_circles
             dx = cx + dot_r * math.cos(angle)
             dy = cy + dot_r * math.sin(angle)
