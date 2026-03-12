@@ -5,6 +5,9 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### Generation 18
+**Mutation:** additive | **Fitness:** 82.40 (+0.88) | Added duplicated shape elements
+
 ### Generation 17
 **Mutation:** structural_swap | **Fitness:** 86.36 (+9.96) | Swapped shape drawing blocks
 
