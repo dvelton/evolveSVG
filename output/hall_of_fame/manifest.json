@@ -8,15 +8,15 @@
     "fitness": 86.3597
   },
   {
+    "generation": 21,
+    "fitness": 84.9567
+  },
+  {
     "generation": 19,
     "fitness": 84.7387
   },
   {
     "generation": 12,
     "fitness": 84.1353
-  },
-  {
-    "generation": 14,
-    "fitness": 83.766
   }
 ]
