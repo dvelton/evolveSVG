@@ -5,6 +5,9 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### Generation 35
+**Mutation:** additive | **Fitness:** 81.21 (+0.22) | Added duplicated shape elements
+
 ### EXTINCTION Generation 34
 **Mutation:** extinction | **Fitness:** 85.83 (+7.07) | EXTINCTION EVENT: Applied mutation (triple mutation, 8 variants)
 
