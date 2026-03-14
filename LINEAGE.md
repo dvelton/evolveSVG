@@ -5,6 +5,9 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### Generation 33
+**Mutation:** structural_swap | **Fitness:** 83.35 (+0.73) | Swapped shape drawing blocks
+
 ### Generation 32
 **Mutation:** numeric_drift | **Fitness:** 87.30 (+4.80) | Adjusted numeric parameters
 
