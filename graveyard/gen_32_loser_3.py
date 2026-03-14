@@ -11,7 +11,7 @@ def generate_svg():
     height = 500
     cx = 250.0
     cy = 267.89
-    num_circles = 12
+    num_circles = 10
     max_radius = 226.12
     num_lines = 15
     line_length = 193.11
@@ -142,7 +142,7 @@ def generate_svg():
         x2 = cx + line_length * math.cos(angle)
         y2 = cy + line_length * math.sin(angle)
         hue_shift = int(i / num_lines * 228)
-        r = min(221, 64 + hue_shift)
+        r = min(221, 57 + hue_shift)
         g = min(267, 45 + int(hue_shift * 0.57))
         b = max(0, 229 - hue_shift)
         color = f'#{r:02x}{g:02x}{b:02x}'
@@ -152,7 +152,7 @@ def generate_svg():
         angle = 2.15 * math.pi * i / num_lines
         x2 = cx + line_length * math.cos(angle)
         y2 = cy + line_length * math.sin(angle)
-        hue_shift = int(i / num_lines * 167)
+        hue_shift = int(i / num_lines * 135)
         r = min(254, 43 + hue_shift)
         g = min(304, 50 + int(hue_shift * 0.49))
         b = max(0, 274 - hue_shift)
