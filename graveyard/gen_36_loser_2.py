@@ -71,6 +71,17 @@ def generate_svg():
         opacity = 0.3 + 0.4 * (i / num_lines)
         elements.append(f'<line x1="{cx}" y1="{cy}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{color}" stroke-width="{stroke_width}" opacity="{opacity:.2f}"/>')
     for i in range(num_lines):
+        angle = 1.75 * math.pi * i / num_lines
+        x2 = cx + line_length * math.cos(angle)
+        y2 = cy + line_length * math.sin(angle)
+        hue_shift = int(i / num_lines * 207)
+        r = min(283, 100 + hue_shift)
+        g = min(184, 32 + int(hue_shift * 0.33))
+        b = max(0, 148 - hue_shift)
+        color = f'#{r:02x}{g:02x}{b:02x}'
+        opacity = 0.36 + 0.45 * (i / num_lines)
+        elements.append(f'<line x1="{cx}" y1="{cy}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{color}" stroke-width="{stroke_width}" opacity="{opacity:.2f}"/>')
+    for i in range(num_lines):
         angle = 2.33 * math.pi * i / num_lines
         x2 = cx + line_length * math.cos(angle)
         y2 = cy + line_length * math.sin(angle)
@@ -176,17 +187,6 @@ def generate_svg():
         b = max(0, 274 - hue_shift)
         color = f'#{r:02x}{g:02x}{b:02x}'
         opacity = 0.26 + 0.37 * (i / num_lines)
-        elements.append(f'<line x1="{cx}" y1="{cy}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{color}" stroke-width="{stroke_width}" opacity="{opacity:.2f}"/>')
-    for i in range(num_lines):
-        angle = 2.71 * math.pi * i / num_lines
-        x2 = cx + line_length * math.cos(angle)
-        y2 = cy + line_length * math.sin(angle)
-        hue_shift = int(i / num_lines * 143)
-        r = min(214, 47 + hue_shift)
-        g = min(391, 35 + int(hue_shift * 0.62))
-        b = max(0, 339 - hue_shift)
-        color = f'#{r:02x}{g:02x}{b:02x}'
-        opacity = 0.33 + 0.3 * (i / num_lines)
         elements.append(f'<line x1="{cx}" y1="{cy}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{color}" stroke-width="{stroke_width}" opacity="{opacity:.2f}"/>')
     elements.append(f'<circle cx="{cx}" cy="{cy}" r="8.0" fill="#dcdba6" fill-opacity="0.9"/>')
     elements.append('</svg>')

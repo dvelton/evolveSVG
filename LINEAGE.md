@@ -5,6 +5,9 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### Generation 36
+**Mutation:** additive | **Fitness:** 79.24 (+2.88) | Added duplicated shape elements
+
 ### Generation 35
 **Mutation:** additive | **Fitness:** 81.21 (+0.22) | Added duplicated shape elements
 
