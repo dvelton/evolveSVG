@@ -5,6 +5,9 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### EXTINCTION Generation 47
+**Mutation:** extinction | **Fitness:** 84.30 (+4.60) | EXTINCTION EVENT: Applied mutation (triple mutation, 8 variants)
+
 ### Generation 46
 **Mutation:** structural_swap | **Fitness:** 83.96 (+7.30) | Swapped shape drawing blocks
 
