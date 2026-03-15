@@ -5,6 +5,11 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### Generation 40
+**Mutation:** additive | **Fitness:** 82.92 (+0.56) | Added duplicated shape elements
+
+![gen 40](output/snapshots/gen_40.svg)
+
 ### EXTINCTION Generation 39
 **Mutation:** extinction | **Fitness:** 87.09 (+5.82) | EXTINCTION EVENT: Applied mutation (triple mutation, 8 variants)
 
