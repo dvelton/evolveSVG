@@ -1,5 +1,9 @@
 [
   {
+    "generation": 61,
+    "fitness": 89.2213
+  },
+  {
     "generation": 54,
     "fitness": 89.1924
   },
@@ -14,9 +18,5 @@
   {
     "generation": 27,
     "fitness": 88.3527
-  },
-  {
-    "generation": 29,
-    "fitness": 87.9599
   }
 ]

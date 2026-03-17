@@ -4,7 +4,7 @@ A self-evolving repository. The code in this repo mutates itself on a schedule,
 generating new SVG artwork through genetic programming. No human writes code after
 the initial commit. The git history is a fossil record of artificial evolution.
 
-![generation](https://img.shields.io/badge/generation-60-blue) ![fitness](https://img.shields.io/badge/fitness-81.27-brightgreen)
+![generation](https://img.shields.io/badge/generation-61-blue) ![fitness](https://img.shields.io/badge/fitness-89.22-brightgreen)
 
 ## Current Output
 
@@ -20,7 +20,7 @@ Each character represents one generation's mutation type:
 `N`=numeric drift, `S`=structural swap, `C`=color shift, `A`=additive, `E`=extinction event
 
 ```
-CCCS.ANANAEACAACSAECEECEANESEAENSEAAESEAEEAEASEEENENCENEECEN
+CCCS.ANANAEACAACSAECEECEANESEAENSEAAESEAEEAEASEEENENCENEECENE
 ```
 
 ## How It Works
