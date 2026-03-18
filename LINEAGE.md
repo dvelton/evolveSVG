@@ -5,6 +5,11 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### Generation 70
+**Mutation:** structural_swap | **Fitness:** 83.44 (+1.90) | Swapped shape drawing blocks
+
+![gen 70](output/snapshots/gen_70.svg)
+
 ### Generation 69
 **Mutation:** numeric_drift | **Fitness:** 86.24 (+2.29) | Adjusted numeric parameters
 
