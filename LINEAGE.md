@@ -5,6 +5,9 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### EXTINCTION Generation 83
+**Mutation:** extinction | **Fitness:** 84.87 (+6.12) | EXTINCTION EVENT: Applied mutation (triple mutation, 8 variants)
+
 ### Generation 82
 **Mutation:** color_shift | **Fitness:** 83.28 (+0.28) | Shifted color palette
 
