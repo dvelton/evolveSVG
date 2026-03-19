@@ -5,6 +5,11 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### Generation 80
+**Mutation:** numeric_drift | **Fitness:** 83.03 (+1.66) | Adjusted numeric parameters
+
+![gen 80](output/snapshots/gen_80.svg)
+
 ### EXTINCTION Generation 79
 **Mutation:** extinction | **Fitness:** 86.23 (+5.08) | EXTINCTION EVENT: Applied mutation (triple mutation, 8 variants)
 
