@@ -5,6 +5,9 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### Generation 123
+**Mutation:** additive | **Fitness:** 84.08 (+0.19) | Added duplicated shape elements
+
 ### EXTINCTION Generation 122
 **Mutation:** extinction | **Fitness:** 88.69 (+11.78) | EXTINCTION EVENT: Applied mutation (triple mutation, 8 variants)
 
