@@ -10,7 +10,7 @@ def generate_svg():
     width = 422
     height = 426
     cx = 195.2
-    cy = 205.1
+    cy = 192.99
     num_circles = 8
     max_radius = 249.66
     num_lines = 10
@@ -38,7 +38,7 @@ def generate_svg():
         radius = max_radius * i / num_circles
         t = i / num_circles
         r = int(42 + 142 * t)
-        g = int(52 + 71 * (1.01 - t))
+        g = int(44 + 71 * (1.01 - t))
         b = int(240 + 55 * math.sin(t * math.pi))
         color = f'#{r:02x}{g:02x}{b:02x}'
         fill_opacity = 0.24 + 0.07 * t
@@ -236,9 +236,9 @@ def generate_svg():
         t = i / num_circles
         r = int(34 + 228 * t)
         g = int(31 + 67 * (1.13 - t))
-        b = int(197 + 95 * math.sin(t * math.pi))
+        b = int(226 + 95 * math.sin(t * math.pi))
         color = f'#{r:02x}{g:02x}{b:02x}'
-        fill_opacity = 0.17 + 0.06 * t
+        fill_opacity = 0.17 + 0.05 * t
         elements.append(f'<circle cx="{cx}" cy="{cy}" r="{radius:.1f}" fill="{color}" fill-opacity="{fill_opacity:.2f}" stroke="{color}" stroke-width="1.5"/>')
     for i in range(num_circles, 0, -1):
         radius = max_radius * i / num_circles
@@ -392,6 +392,13 @@ def generate_svg():
             dx = cx + dot_r * math.cos(angle)
             dy = cy + dot_r * math.sin(angle)
             elements.append(f'<circle cx="{dx:.1f}" cy="{dy:.1f}" r="3.0" fill="#ffb89d" fill-opacity="0.6"/>')
+    for i in range(0, num_lines, 2):
+        angle = 1.07 * math.pi * i / num_lines
+        for j in range(3, num_circles, 2):
+            dot_r = max_radius * j / num_circles
+            dx = cx + dot_r * math.cos(angle)
+            dy = cy + dot_r * math.sin(angle)
+            elements.append(f'<circle cx="{dx:.1f}" cy="{dy:.1f}" r="3.0" fill="#ffb89d" fill-opacity="0.6"/>')
     for i in range(0, num_lines, 4):
         angle = 1.17 * math.pi * i / num_lines
         for j in range(2, num_circles, 3):
@@ -405,7 +412,7 @@ def generate_svg():
             dot_r = max_radius * j / num_circles
             dx = cx + dot_r * math.cos(angle)
             dy = cy + dot_r * math.sin(angle)
-            elements.append(f'<circle cx="{dx:.1f}" cy="{dy:.1f}" r="3.0" fill="#88cfc9" fill-opacity="0.6"/>')
+            elements.append(f'<circle cx="{dx:.1f}" cy="{dy:.1f}" r="3.0" fill="#8aeba5" fill-opacity="0.6"/>')
     for i in range(0, num_lines, 2):
         angle = 3.33 * math.pi * i / num_lines
         for j in range(4, num_circles, 2):
@@ -455,7 +462,7 @@ def generate_svg():
         opacity = 0.23 + 0.4 * (i / num_lines)
         elements.append(f'<line x1="{cx}" y1="{cy}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{color}" stroke-width="{stroke_width}" opacity="{opacity:.2f}"/>')
     for i in range(0, num_lines, 6):
-        angle = 1.41 * math.pi * i / num_lines
+        angle = 1.27 * math.pi * i / num_lines
         for j in range(3, num_circles, 2):
             dot_r = max_radius * j / num_circles
             dx = cx + dot_r * math.cos(angle)
@@ -581,7 +588,7 @@ def generate_svg():
         y2 = cy + line_length * math.sin(angle)
         hue_shift = int(i / num_lines * 237)
         r = min(224, 77 + hue_shift)
-        g = min(307, 35 + int(hue_shift * 0.7))
+        g = min(307, 38 + int(hue_shift * 0.7))
         b = max(0, 202 - hue_shift)
         color = f'#{r:02x}{g:02x}{b:02x}'
         opacity = 0.34 + 0.38 * (i / num_lines)
@@ -615,7 +622,7 @@ def generate_svg():
         angle = 3.42 * math.pi * i / num_lines
         x2 = cx + line_length * math.cos(angle)
         y2 = cy + line_length * math.sin(angle)
-        hue_shift = int(i / num_lines * 230)
+        hue_shift = int(i / num_lines * 202)
         r = min(254, 25 + hue_shift)
         g = min(248, 72 + int(hue_shift * 0.61))
         b = max(0, 178 - hue_shift)
