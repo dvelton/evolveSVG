@@ -5,6 +5,9 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### EXTINCTION Generation 152
+**Mutation:** extinction | **Fitness:** 82.35 (+1.61) | EXTINCTION EVENT: Applied mutation (triple mutation, 8 variants)
+
 ### EXTINCTION Generation 151
 **Mutation:** extinction | **Fitness:** 85.03 (+9.74) | EXTINCTION EVENT: Applied mutation (triple mutation, 8 variants)
 
