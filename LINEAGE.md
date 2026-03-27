@@ -5,6 +5,9 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### EXTINCTION Generation 166
+**Mutation:** extinction | **Fitness:** 80.98 (+2.29) | EXTINCTION EVENT: Applied mutation (triple mutation, 8 variants)
+
 ### Generation 165
 **Mutation:** numeric_drift | **Fitness:** 83.51 (+0.06) | Adjusted numeric parameters
 
