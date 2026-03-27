@@ -38,7 +38,7 @@ def generate_svg():
         hue_shift = int(i / num_lines * 140)
         r = min(348, 51 + hue_shift)
         g = min(383, 60 + int(hue_shift * 0.64))
-        b = max(0, 220 - hue_shift)
+        b = max(0, 238 - hue_shift)
         color = f'#{r:02x}{g:02x}{b:02x}'
         opacity = 0.35 + 0.38 * (i / num_lines)
         elements.append(f'<line x1="{cx}" y1="{cy}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{color}" stroke-width="{stroke_width}" opacity="{opacity:.2f}"/>')
@@ -252,7 +252,7 @@ def generate_svg():
         radius = max_radius * i / num_circles
         t = i / num_circles
         r = int(38 + 276 * t)
-        g = int(25 + 76 * (0.72 - t))
+        g = int(24 + 61 * (0.72 - t))
         b = int(203 + 87 * math.sin(t * math.pi))
         color = f'#{r:02x}{g:02x}{b:02x}'
         fill_opacity = 0.1 + 0.05 * t
