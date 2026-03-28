@@ -5,6 +5,11 @@ what mutation was applied, and how fitness changed.
 
 ---
 
+### Generation 170
+**Mutation:** numeric_drift | **Fitness:** 79.31 (+1.40) | Adjusted numeric parameters
+
+![gen 170](output/snapshots/gen_170.svg)
+
 ### Generation 169
 **Mutation:** additive | **Fitness:** 82.07 (+0.15) | Added duplicated shape elements
 
